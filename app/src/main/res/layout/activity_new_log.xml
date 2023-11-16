@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Activity"
+        style="@style/TitleTheme"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="70dp"/>
+
+    <Button
+        android:id="@+id/finish_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="300dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/finish"/>
+
+    <TextView
+        android:id="@+id/new_activity_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Goal"
+        style="@style/RegularText"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="140dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_activity_text"
+        android:layout_marginHorizontal="20dp">
+
+        <CheckBox android:id="@+id/checkbox_biking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="goal 1"
+            android:onClick="onCheckboxClicked" />
+
+        <CheckBox android:id="@+id/checkbox_reading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="goal 2"
+            android:layout_below="@id/checkbox_biking"
+            android:layout_marginTop="1dp"
+            android:onClick="onCheckboxClicked" />
+
+        <CheckBox android:id="@+id/checkbox_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="goal 3"
+            android:layout_below="@id/checkbox_reading"
+            android:layout_marginTop="1dp"
+            android:onClick="onCheckboxClicked" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        style="@style/RegularText"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="320dp" />
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="140dp"
+        android:layout_marginTop="315dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connections"
+        style="@style/RegularText"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="390dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sync your goals with these third-party applications"
+        style="@style/DescriptionText"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="430dp"/>
+
+    <ImageButton
+        android:id="@+id/spotify_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/fitbit"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="480dp"/>
+
+    <ImageButton
+        android:id="@+id/strava_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/strava"
+        android:layout_marginHorizontal="160dp"
+        android:layout_marginTop="480dp"/>
+
+    <ImageButton
+        android:id="@+id/duolingo_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/duolingo"
+        android:layout_marginHorizontal="280dp"
+        android:layout_marginTop="480dp"/>
+
+
+</RelativeLayout>

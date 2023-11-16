@@ -16,14 +16,22 @@
         android:layout_above="@id/goal_settings"/>
 
     <Button
-            android:id="@+id/new_goal"
-            android:text="New Goal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="75dp"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentTop="true"
-            />
+        android:id="@+id/new_goal"
+        android:text="New Goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/log_activity"
+        android:text="Log Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="125dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
 
         <Button
             android:id="@+id/goal_settings"
